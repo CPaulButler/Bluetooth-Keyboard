@@ -34,9 +34,9 @@
 
 
 // Change the below values if desired
-#define BUTTON_PIN 2
+#define BUTTON_PIN 0
 #define MESSAGE "Hello from ESP32\n"
-#define DEVICE_NAME "Marty's ESP32 Keyboard"
+#define DEVICE_NAME "Martys ESP32 Keyboard"
 
 
 // Forward declarations
@@ -120,7 +120,6 @@ static const uint8_t REPORT_MAP[] = {
     HIDOUTPUT(1),       0x01,       //   Const, Array, Abs
     END_COLLECTION(0)               // End application collection
 };
-
 
 BLEHIDDevice* hid;
 BLECharacteristic* input;
